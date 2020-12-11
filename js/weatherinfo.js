@@ -1,7 +1,7 @@
 
 //User location
-$.getJSON('http://ip-api.com/json', function (data) {
-    var lat = data.lat;
+//$.getJSON('http://ip-api.com/json', function (data) {
+/*     var lat = data.lat;
     var lon = data.lon;
     var units = "metric";
 
@@ -17,3 +17,4 @@ $.getJSON('http://ip-api.com/json', function (data) {
         $("#icon").html('<img src="http://openweathermap.org/img/w/' + json.weather[0].icon + '.png"</img>');
     });
 });
+ */
