@@ -1,0 +1,195 @@
+body, html{
+    margin:0;
+    padding: 0;
+    width:100%;
+    height: 100%;
+    font-family: '나눔스퀘어라운드 light';
+}
+body{
+    position: fixed; 
+	overflow-y: scroll;
+	width: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(135deg,#FC5C7D,#FFEF88);
+    z-index: -1;
+    position: relative;
+}
+.logo{
+    width: 4rem;
+    height: auto;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 90%;
+}
+.user-container{
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    width: 20rem;
+    height: 15rem;
+    border-radius: 1.3rem;
+
+}
+.profile-container{
+    display: flex;
+    width: 18rem;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+.profile-container img{
+    width: 10rem;
+    height: auto;
+    position: relative;
+    right: 0.4rem;
+}
+.style-container{
+    background-color: white;
+    border-radius: 1.3rem;
+    width: 20rem;
+    height: 10rem;
+    background-color: #024E30;
+    background-image: url('../image/마스크\ 그룹\ 13.png');
+
+}
+.mannequin-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 1.3rem;
+    width: 9rem;
+    height: 9rem;
+}
+.mannequin-container img{
+    width: 2rem;
+    height: auto;
+}
+.profile-infoS{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    bottom: 1rem;
+    width: 8rem;
+}
+
+.profile-infoS div{
+    margin-top: 0.3rem;
+}
+
+#is-premium {
+    border: 1px solid #FC5C7D;
+    font-size: 0.3rem;
+    color: #FC5C7D;
+    border-radius: 1rem;
+    width: 60%;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.style-text-container{
+    display: flex;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+.style-main-text {
+    font-family: 'Recipekorea';
+    color: aliceblue;
+    font-size: 1.6rem;
+}
+
+.user-name {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#user_name {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+#user-age {
+    font-size: 0.8rem;
+}
+
+.color-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 1.3rem;
+    width: 9rem;
+    height: 9rem;
+}
+.color-container img{
+    width: 4rem;
+    height: auto;
+}
+.subcontainer{
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+}
+.text-container{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0.4rem;
+}
+
+.mannequin-container .text-container{
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    margin-top: 1rem;
+}
+
+.color-container p{
+    font-weight: bolder;
+    margin-top: 1rem;
+}
+
+.user-container,
+.style-container,
+.mannequin-container,
+.color-container {
+    box-shadow: 0rem 0rem 0.5rem 0rem rgba(0, 0, 0, 0.281);
+}
+
+p{
+    margin: 0;
+}
+
+
+
+@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+@font-face {
+    font-family: 'Recipekorea';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

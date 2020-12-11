@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웨더라인</title>
+    <link rel="stylesheet" href="../css/setting.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <script src="https://kit.fontawesome.com/25db3b04f4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div>
+            <div>
+                <p class="main-text">알림 설정</p>
+            </div>
+            <div class="main-box">
+                <div class="row">
+                    <p class="semitext">알람 받기</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider-round"></span>
+                    </label>
+                </div>
+                <hr align="left">
+                <div class="row">
+                    <p class="semitext">알람 시간 설정</p>
+                    <div id="time-setting-box">
+                        :
+                    </div>
+                </div>
+                <hr align="left">
+                <div class="row">
+                    <p class="semitext">알람 소리</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider-round"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <p class="main-text">기타</p>
+            </div>
+            <div class="main-box">
+                <div class="row">
+                    <p class="semitext">내 코디 전체 지우기</p>
+                    <img>
+                </div>
+                <hr align="left">
+                <div class="row">
+                    <p class="semitext">사용자 설정 초기화</p>
+                    <img>
+                </div>
+            </div>
+            <div class="main-box" id="logout-box">
+                <a href="./login.html">
+                    <p class="semitext" id="logout-text">로그아웃</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="nav-icon" style="margin-bottom: 0.3rem;">
+            <div class="user"><a href="../html/user.html"><i class="far fa-user"></i></a></div>
+            <div class="weather"><a href="../html/main.html"><i class="far fa-sun"></i></a></div>
+            <div class="codi"><a href="../html/codi.html"></a><i class="fas fa-tshirt"></i></a></div>
+            <div class="heart"><a href="../html/heart.html"></a><i class="far fa-heart"></i></a></div>
+        </div>
+        <img class="nav-bar" src="../image/nav-bar-setting.png" style="right:-10rem;">
+    </div>
+
+</body>
+
+</html>

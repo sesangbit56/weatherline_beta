@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웨더라인</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://kit.fontawesome.com/25db3b04f4.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/weatherinfo.js"></script>
+    <link rel="stylesheet" href="../css/nav.css">
+</head>
+
+<body>
+    <div class="setting">
+        <a href="../html/setting.html"><i class="fas fa-cog"></i></a>
+
+    </div>
+    <div id="main">
+        <div id="weather-container">
+            <div class="title-container">
+                <img class="logo" src="../image/whitelogo.png">
+                <div class=title-i-container onclick="">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>안산시 와동</p>
+                </div>
+                <p id="today-weather">오늘의 날씨</p>
+                <p id="today">2020년 19월 9일</p>
+
+            </div>
+            <div class="weather-info">
+                <div class="weather-info-img">
+                    <img src="../image/sun.svg" alt="">
+                </div>
+                <div class="weather-info-text">
+                    <p class="weather-info-num" id="temperature-celcius"></p>
+                    <p class="weather-info-lan" id="overall">매우 맑음</p>
+                    <div class="weather-info-text-percent">
+                        <p id="humidity">습도 0%</p>
+                        <p>미세먼지 60mg</p>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-info-graph">
+                <img src="../image/graph.png" alt="">
+            </div>
+            <hr>
+            <div class="weather-caution">
+                <div class="weather-caution-info">
+                    <img src="../image/face-mask.svg" alt="">
+                    <div class="weather-caution-text">
+                        <p>코로나19 주의! 외출을 삼가해주세요.</p>
+                        <p>혹시 외출시에는 마스크를 꼭 착용하세요.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-dot">
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="nav-icon">
+            <div class="user"><a href="../html/user.html"><i class="far fa-user"></i></a></div>
+            <div class="weather" id="now-icon"><a href="../html/weather.html"></a><i class="far fa-sun"></i></a></div>
+            <div class="codi"><a href="../html/codi.html"></a><i class="fas fa-tshirt"></i></a></div>
+            <div class="heart"><a href="../html/heart.html"></a><i class="far fa-heart"></i></a></div>
+        </div>
+        <img class="nav-bar" src="../image/nav-bar.png" alt="">
+    </div>
+
+    <script src="../js/backgroundgrad.js"></script>
+</body>
+
+</html>

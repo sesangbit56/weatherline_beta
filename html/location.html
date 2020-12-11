@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/location.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+</head>
+<body>
+
+    <script type="text/javascript">
+        $(document).ready(function() { var placeholderTarget = $('.textbox input[type="text"]'); 
+        //포커스시 
+            placeholderTarget.on('focus', function(){ 
+                $(this).siblings('label').fadeOut('fast'); 
+            }); 
+        //포커스아웃시 
+            placeholderTarget.on('focusout', function(){ 
+                if($(this).val() == ''){
+                    $(this).siblings('label').fadeIn('fast'); 
+                } 
+            }); 
+        });
+
+    </script>
+
+    <div class="img-container">
+        <img src="../image/weather line.svg" alt="">
+        <div class="Gauge-bar-box"><div class="Gauge-bar"></div><div class="Gauge-bar-white"></div></div>
+        <div id="semitext">2/6</div>
+    </div>
+
+    <div class="text-container">
+        <div class="main-text">
+            <div>날씨를 알고싶은</div>
+            <div>지역을 검색해주세요.</div>
+        </div>
+        <img id="search-img" src="../image/search.png">
+        <div class="textbox">
+            <label for="ex_input">주소 검색하기</label>
+            <input type="text" id="ex_input">
+        </div>
+        <div class="location-container">
+            <img id="nav" src="../image/nav.png" alt="#">
+            <div id="location">"경기도 안산시 와동"</div>
+        </div>
+        <a href="../html/temp.html"><div id="next-box"><p>다음</p></div></a>
+    </div>
+
+    
+</body>
+</html>

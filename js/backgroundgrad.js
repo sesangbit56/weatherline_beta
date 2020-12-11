@@ -1,0 +1,1 @@
+var maindiv = document.getElementById('main');

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/body.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        $(document).ready(function() { var placeholderTarget = $('.textbox input[type="text"]'); 
+        //포커스시 
+            placeholderTarget.on('focus', function(){ 
+                $(this).siblings('label').fadeOut('fast'); 
+            }); 
+        //포커스아웃시 
+            placeholderTarget.on('focusout', function(){ 
+                if($(this).val() == ''){
+                    $(this).siblings('label').fadeIn('fast'); 
+                } 
+            }); 
+        });
+
+    </script>
+    <div class="img-container">
+        <img src="../image/weather line.svg" alt="">
+        <div class="Gauge-bar-box"><div class="Gauge-bar"></div><div class="Gauge-bar-white"></div></div>
+        <div id="semitext">4/6</div>
+    </div>
+
+    <div class="text-container">
+        <div class="main-text">
+            <div>당신의 신체 정보를</div>
+            <div>알려주세요.</div>
+        </div>
+        <div class="box-container">
+            <div class="height-container">
+                <p>키</p>
+                <div class="textbox">
+                    <label for="ex_input">cm</label>
+                    <input type="text" id="ex_input">
+                </div>
+            </div>
+            <div class="weight-container">
+                <p>몸무게</p>
+                <div class="textbox">
+                    <label for="ex_input">kg</label>
+                    <input type="text" id="ex_input">
+                </div>
+            </div>
+        </div>
+        <div class="bodytype-container">
+            <p>나는</p>
+            <select name="체형 선택" id="체형선택">
+                <option value="통통한 ">통통</option>
+                <option value="마른 ">마른</option>
+                <option value="하체비만 ">하체</option>
+                <option value="상체비만 ">상체</option>
+                <option value="보통">보통</option>
+            </select>
+            <p>체형이에요</p>
+        </div>
+        <a href="../html/style.html"><div id="next-box"><p>다음</p></div></a>
+    </div>
+</body>
+</html>

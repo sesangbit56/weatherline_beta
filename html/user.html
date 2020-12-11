@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웨더라인</title>
+    <link rel="stylesheet" href="../css/user.css">
+    <script src="https://kit.fontawesome.com/25db3b04f4.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/weatherinfo.js"></script>
+    <link rel="stylesheet" href="../css/nav.css">
+    <style>
+        .setting{
+            position: absolute;
+            font-size:1.5rem;
+            left: -0.7rem;
+        }
+
+        .setting i{
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="setting">
+        <a href="../html/setting.html"><i class="fas fa-cog"></i></a>
+
+    </div>
+    <div id="main">
+        <div class="main-container">
+            <img class="logo" src="../image/whitelogo.png" alt="">
+            <div class="user-container">
+                <div class="profile-container">
+                    <img src="../image/user-icon.png" alt="">
+                    <div class="profile-infoS">
+                        <div id="is-premium"><p>프리미엄 회원</p></div>
+                        <div class="user-name"><p id="user_name">김맑음</p> 님</div>
+                        <div id="user-age"><p>18세</p></div>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>#후드티 #조거팬츠 #크로스백 #운동화</p>
+                    <p>#힙스터룩 #오피스룩 #캠퍼스룩</p>
+                </div>
+            </div>
+            <div class="style-container">
+                <div class="style-text-container">
+                    <p class="style-main-text">12월의 디자이너!</p>
+                    <p class="style-main-text">이햇살의 코디</p>
+                    <p>>> 보러가기</p>
+                </div>   
+            </div>
+            <div class="subcontainer">
+                <div class="mannequin-container">
+                    <img src="../image/mannequin.png" alt="">
+                    <div class="text-container">
+                        <p>내 체형 마네킹</p>
+                        <p>코디해보기</p>
+                    </div>
+                </div>
+                <div class="color-container">
+                    <img src="../image/prcolor.png" alt="">
+                    <p>퍼스널 컬러 진단</p>
+                </div>
+            </div>
+        </div>
+            
+            
+    </div>
+
+    <div class="nav">
+        <div class="nav-icon">
+            <div class="user" id="now-icon"><a href="../html/user.html"><i class="far fa-user"></i></a></div>
+            <div class="weather"><a href="../html/main.html"><i class="far fa-sun"></i></a></div>
+            <div class="codi"><a href="../html/codi.html"></a><i class="fas fa-tshirt"></i></a></div>
+            <div class="heart"><a href="../html/heart.html"></a><i class="far fa-heart"></i></a></div>
+        </div>
+        <img class="nav-bar" src="../image/nav-bar.png" alt="">
+    </div>
+
+    <script src="../js/backgroundgrad.js"></script>
+    <script src="../js/navbar.js"></script>
+</body>
+
+</html>
