@@ -10,6 +10,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../js/weatherinfo.js"></script>
     <link rel="stylesheet" href="../css/nav.css">
+    <style>
+        #next {
+            font-size: 1rem;
+            color: rgba(0, 0, 0, 0);
+        }
+
+        
+    </style>
 </head>
 
 <body>
@@ -17,49 +25,47 @@
         <a href="../html/setting.html"><i class="fas fa-cog"></i></a>
 
     </div>
-    <div id="main">
+    <div id="mainTomorrow">
         <div id="weather-container">
             <div class="title-container">
                 <img class="logo" src="../image/whitelogo.png">
                 <div class=title-i-container onclick="">
                     <i class="fas fa-map-marker-alt"></i>
-                    <p>서울특별시</p>
+                    <p>서울특별시</p><a id="next" href="../html/main.html">a</a>
                 </div>
-                <p id="today-weather">오늘의 날씨</p>
-                <p id="today">2020년 12월 12일</p>
+                <p id="today-weather">내일의 날씨</p>
+                <p id="today">2020년 12월 13일</p>
 
             </div>
             <div class="weather-info">
                 <div class="weather-info-img">
-                    <img src="../image/sun.svg" alt="">
+                    <img src="../image/rainy.png" style="color:white;" alt="">
                 </div>
                 <div class="weather-info-text">
-                    <p class="weather-info-num" id="temperature-celcius">6 Cº</p>
-                    <p class="weather-info-lan" id="overall">맑음</p> 
+                    <p class="weather-info-num" id="temperature-celcius">-1ºc</p>
+                    <p class="weather-info-lan" id="overall">눈이나 비</p>
                     <div class="weather-info-text-percent">
-                        <p id="humidity">강수확률 0%</p>
+                        <p id="humidity">강수확률 60%</p>
                         <p>미세먼지 보통</p>
-                        <a id="next" href="../html/mainTom.html">></a>
                     </div>
                 </div>
-            </div>
-            </div>
-            <hr>
-            <div class="weather-caution">
-                <div class="weather-caution-info">
-                    <img src="../image/face-mask.svg" alt="">
-                    <div class="weather-caution-text">
-                        <p>코로나19 주의! 외출을 삼가해주세요.</p>
-                        <p>혹시 외출시에는 마스크를 꼭 착용하세요.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="nav-dot">
-                <a href="../html/mainTomorrow.html"><i class="fas fa-circle"></i></a>
-                <a href="../html/main.html"><i class="fas fa-circle"></i></a>
-                <i class="fas fa-circle"></i>
             </div>
         </div>
+        <hr>
+        <div class="weather-caution">
+            <div class="weather-caution-info">
+                <img src="../image/jacket.png" style="width: 3.3rem;" alt="">
+                <div class="weather-caution-text">
+                    <p>최저기온 -1º! 목도리나 장갑, 롱패딩 필수!</p>
+                </div>
+            </div>
+        </div>
+        <div class="nav-dot">
+            <a href="../html/mainTomorrow.html"><i class="fas fa-circle"></i></a>
+            <a href="../html/main.html"><i class="fas fa-circle"></i></a>
+            <i class="fas fa-circle"></i>
+        </div>
+    </div>
     </div>
 
     <div class="nav">
