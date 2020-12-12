@@ -27,7 +27,8 @@ body{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 90%;
+    height: 80%;
+    padding-top: 2.5rem;
 }
 .user-container{
     display:flex;
@@ -36,7 +37,7 @@ body{
     justify-content: space-around;
     align-items: center;
     width: 20rem;
-    height: 13rem;
+    height: 11rem;
     border-radius: 1.3rem;
 
 }
@@ -56,7 +57,7 @@ body{
     background-color: white;
     border-radius: 1.3rem;
     width: 20rem;
-    height: 10rem;
+    height: 8rem;
     background-color: #024E30;
     background-image: url('../image/마스크\ 그룹\ 13.png');
 
